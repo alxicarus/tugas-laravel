@@ -19,3 +19,8 @@ Route::get('/', function () {
 Route::get('/', 'homeControllers@index');
 Route::get('/daftar', 'authControllers@index');
 Route::get('/welcome','authControllers@welcome');
+Route::get('/data-tables','homeControllers@dataTables');
+
+Route::get('/master', function () {
+    return view('depan');
+});
